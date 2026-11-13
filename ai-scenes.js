@@ -19,7 +19,7 @@
   const categoryScene = ["gaming-studio", "filmmaker-camera", "mountain-photography"];
   const termScene = [
     "competitive-gamer", "office-creator", "aerial-drone",
-    "film-editor", "outdoor-artist", "home-family"
+    "film-editor", "outdoor-artist", "hero-travel"
   ];
   const questionScene = [
     "filmmaker-camera", "competitive-gamer", "office-creator", "student-creator",
