@@ -1,0 +1,67 @@
+{
+  "kind": "AI-generated contextual artwork, 2026-11-13",
+  "source": "image_gen rendered concept composites; individually cropped into lifestyle scenes",
+  "usage": "Background/lifestyle scenes only; not product or brand artwork",
+  "files": [
+    {
+      "name": "aerial-drone.webp",
+      "bytes": 12844,
+      "sha256": "6645e0eee1a9c6da8b1b7271e5bd09429344d0ad5ab43a4b9c32429c3125276c"
+    },
+    {
+      "name": "competitive-gamer.webp",
+      "bytes": 21486,
+      "sha256": "db41110e85969edfa49484150d59409df977344ce148d3d7ab277b49975dd909"
+    },
+    {
+      "name": "film-editor.webp",
+      "bytes": 18372,
+      "sha256": "011d59add8146d3dd8e0ae663eeaee35d096ea2c281b226f33afe2920792531c"
+    },
+    {
+      "name": "filmmaker-camera.webp",
+      "bytes": 22276,
+      "sha256": "ab1c5e51604ca5bc5367c89ba119dc917ace031f272fd74c09b6fd183e4598c5"
+    },
+    {
+      "name": "gaming-studio.webp",
+      "bytes": 17042,
+      "sha256": "6997de621fb07f3cb83606d7907aaae6ea8e28a2f9891e3b06edb265fde41ef2"
+    },
+    {
+      "name": "hero-explorer.webp",
+      "bytes": 57376,
+      "sha256": "455c066c85afdde95d49f1ff6e277c711dbed66cc6067bbfe4c59d38fa32af5b"
+    },
+    {
+      "name": "hero-travel.webp",
+      "bytes": 24810,
+      "sha256": "be8eead1be889995fecab789dbe9c54e4d48d0daa5cf6559617cfa2006f0e41f"
+    },
+    {
+      "name": "home-family.webp",
+      "bytes": 18076,
+      "sha256": "82996b8d2139295440a47f04c7971a4d8a470660c569080645ab718b35e96d57"
+    },
+    {
+      "name": "mountain-photography.webp",
+      "bytes": 9638,
+      "sha256": "7d5766184c0af985cf526ac405d8cfd72b9ce381f98c93855a69dc8c0800dd1c"
+    },
+    {
+      "name": "office-creator.webp",
+      "bytes": 14686,
+      "sha256": "ada4fc7a533013b9701f3c0eca7682a6436a558343c0bbca54ec2d3ade97a41c"
+    },
+    {
+      "name": "outdoor-artist.webp",
+      "bytes": 25320,
+      "sha256": "418c10d0c0c6881e962d7f3d7f9a76a13f3a9ab9c1232761e11e13ba6042927a"
+    },
+    {
+      "name": "student-creator.webp",
+      "bytes": 16630,
+      "sha256": "56c6da38bdd1889463af985a9133a143340484006c1c69e0eb728ec6a8372548"
+    }
+  ]
+}
