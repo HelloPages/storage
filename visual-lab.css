@@ -1,0 +1,124 @@
+/* HelloPages Visual Lab | original diagrams and motion; products remain official photos */
+.visual-lab-section{background:#e5eeea;overflow:hidden;padding:92px 0 90px}
+.visual-lab-intro{margin-bottom:25px}
+.visual-caption-badge{display:flex;align-items:center;gap:8px;font:850 11px Consolas,monospace;color:#33786d;letter-spacing:.05em;border:1px solid #a8ccc1;background:#f8fcf8;border-radius:6px;padding:10px 12px;white-space:nowrap}
+.pulse-symbol{height:9px;width:9px;display:block;background:#34ad92;box-shadow:0 0 0 4px #d1f1e6;animation:lab-pulse 2s ease-in-out infinite;border-radius:2px}
+.visual-lab-panel{overflow:hidden;border-radius:10px;border:1px solid #325c63;background:#0c242e;box-shadow:5px 5px 0 #c6d7d0}
+.route-controls{display:flex;align-items:stretch;gap:2px;background:#12333d;border-bottom:1px solid #325761;padding:11px 13px}
+.route-tab{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:2px;border:1px solid #35525c;background:#1a3b45;color:#8cb8ae;padding:11px 16px;border-radius:6px;text-align:left;font:850 11px Consolas,monospace;letter-spacing:.05em}
+.route-tab strong{font:900 16px/1.35 "Noto Sans TC","Microsoft JhengHei",sans-serif;letter-spacing:0;color:#d9e7df}
+.route-tab span{font-size:10px;letter-spacing:.04em;color:#779c9a}
+.route-tab.is-active{background:#d8fff0;color:#25564b;border-color:#a7e3cf}
+.route-tab.is-active strong{color:#1d504a}.route-tab.is-active span{color:#527e6c}
+.route-tab:hover:not(.is-active){background:#2c525b;color:#c7fcf0}
+.pause-route{flex:0 0 auto;background:transparent;border:1px solid #3e626b;color:#b4d1cc;border-radius:6px;padding:8px 11px;font-size:12px;font-weight:850;align-self:stretch;margin-left:9px}
+.pause-route span{font-size:14px;margin-left:5px}
+.pause-route[aria-pressed=true]{background:#2b545c;color:#e8fbef}
+.route-picture{min-height:305px;position:relative;background:radial-gradient(circle at 52% 58%,#1d4651 0%,#0d2731 58%,#0a1d26 100%);overflow:hidden}
+.route-picture::before{content:"";position:absolute;inset:0;background-image:linear-gradient(#42626d25 1px,transparent 1px),linear-gradient(90deg,#42626d25 1px,transparent 1px);background-size:37px 37px;mask-image:linear-gradient(to right,transparent,#000 20%,#000 80%,transparent);pointer-events:none}
+.route-picture svg{position:relative;z-index:2;width:100%;height:305px;display:block}
+.route-svg-line{fill:none;stroke:#73e5cb;stroke-width:3;stroke-dasharray:9 13;animation:lab-dash 1.5s linear infinite}
+.route-svg-glow{fill:none;stroke:#3f957f;stroke-width:17;opacity:.2}
+.route-svg-legend{font:850 16px "Noto Sans TC","Microsoft JhengHei",sans-serif;fill:#edfcf5}
+.route-svg-code{font:850 12px Consolas,monospace;fill:#80d7c3;letter-spacing:1.5px}
+.route-svg-stage{stroke:#8bded2;stroke-width:2;fill:#173944}
+.route-svg-panel{stroke:#a7dfd1;stroke-width:2;fill:#163540}
+.route-svg-light{fill:#8aedd4}
+.route-svg-muted{fill:#628d90}
+.route-svg-strong{stroke:#f6d28a;stroke-width:2;fill:none}
+.route-svg-data{fill:#a4ffe9;filter:drop-shadow(0 0 7px #7efad2)}
+.route-animation-paused .route-svg-line{animation-play-state:paused}
+.route-notes{min-height:115px;display:flex;align-items:center;justify-content:space-between;gap:25px;border-top:1px solid #2a515c;padding:20px 29px;color:#c2ded4}
+.route-label,.mini-code{display:block;color:#76baae;font:750 11px Consolas,monospace;letter-spacing:.05em}
+.route-notes h3{font-size:22px;letter-spacing:-.03em;font-weight:950;color:#e5fff5;line-height:1.3;margin-top:6px}
+.route-notes p{font-size:13px;line-height:1.65;max-width:460px;color:#a6c5c0}
+.visual-compare{border:1px solid #c7d9d0;background:#f8fbf6;border-radius:10px;margin-top:24px;padding:28px 27px 29px}
+.visual-compare-header{display:flex;align-items:end;justify-content:space-between;gap:20px;border-bottom:1px solid #d7e5dd;padding-bottom:18px}
+.visual-compare-header h3{font-size:23px;letter-spacing:-.04em;margin:7px 0 0}
+.visual-compare-header p{font-size:12px;color:#6b8178;line-height:1.7;max-width:410px}
+.visual-bars{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;padding-top:21px}
+.speed-card{min-width:0;background:#fff;border:1px solid #d4e3da;border-radius:8px;padding:18px;display:grid;grid-template-columns:92px minmax(0,1fr);align-items:center;gap:15px}
+.speed-photo{width:92px;height:100px;object-fit:contain;mix-blend-mode:multiply}
+.speed-copy{min-width:0}
+.speed-copy small{display:block;font-size:11px;color:#6d8f83;font-weight:750;margin-bottom:6px}
+.speed-copy strong{display:block;font-size:18px;font-weight:950;letter-spacing:-.03em}
+.speed-copy b{font-size:20px;color:#247d72;letter-spacing:-.04em;font-weight:950}
+.speed-copy b span{font-size:12px;font-weight:750;color:#6d867b}
+.speed-meter{height:11px;background:#e4eee7;border-radius:3px;margin-top:12px;overflow:hidden}
+.speed-meter>i{display:block;height:100%;background:linear-gradient(90deg,#247e75,#79dcbf);border-radius:3px;transform-origin:left center;animation:lab-bar .7s ease-out both}
+.visual-bars-explain{grid-column:1/-1;color:#59766d;font-size:12px;line-height:1.6;display:flex;align-items:center;gap:8px}
+.visual-bars-explain::before{content:"※";color:#378c7d;font-size:16px;font-weight:900}
+@keyframes lab-dash{from{stroke-dashoffset:0}to{stroke-dashoffset:-44}}
+@keyframes lab-bar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes lab-pulse{0%,100%{box-shadow:0 0 0 3px #d1f1e6;opacity:1}50%{box-shadow:0 0 0 7px #d1f1e68a;opacity:.65}}
+
+/* More visible real products: neutral gallery rather than black products disappearing in black space. */
+.hero-visual{background:linear-gradient(155deg,#cdded6 0%,#f6faf1 55%,#afcfc4 100%);border-color:#bad8ca;box-shadow:12px 12px 0 #24464c}
+.hero-visual::before{content:"";width:330px;height:330px;border:1px solid #88c2b8;position:absolute;top:14px;left:50%;transform:translateX(-50%);border-radius:50%;opacity:.55;pointer-events:none;animation:lab-ring 10s linear infinite}
+.hero-visual::after{content:"";width:250px;height:250px;border:1px dashed #4b958d;position:absolute;top:55px;left:50%;transform:translateX(-50%);border-radius:50%;opacity:.32;pointer-events:none;animation:lab-ring 16s linear infinite reverse}
+.hero-image{mix-blend-mode:normal;filter:drop-shadow(0 22px 25px rgba(15,45,51,.28));z-index:2;position:relative}
+.hero-corner-label,.hero-code,.hero-visual .visual-index,.hero-visual .visual-info span{color:#43716f}
+.hero-visual .visual-info strong{color:#213f42}
+.hero-code{border-top-color:#b3d0c5}
+.visual-info{position:relative;z-index:3}
+@keyframes lab-ring{from{rotate:0deg}to{rotate:360deg}}
+.product-media{background:radial-gradient(circle at 70% 30%,#f9fcf3 0%,#e0ece5 72%,#c9dbd4 100%)}
+.product-media::before{content:"";position:absolute;inset:26px 40px;border:1px solid #aaccc2;border-radius:50%;opacity:.65}
+.product-media img{mix-blend-mode:normal;filter:drop-shadow(0 12px 16px rgba(14,41,45,.16));position:relative;z-index:1}
+.media-index,.media-kicker,.media-bottom{color:#4e716b}
+.media-bottom{color:#627c72}
+.product-card:hover .product-media img{transform:translateY(-4px);transition:transform .25s ease}
+.feature-tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:15px}
+.feature-tile{min-width:0;border:1px solid #cbded3;background:#f2f8f3;border-radius:6px;padding:10px 6px;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center}
+.feature-symbol{width:34px;height:34px;border-radius:6px;background:#d4eee2;border:1px solid #b1dccb;display:grid;place-items:center}
+.feature-symbol svg{width:21px;height:21px;stroke:#277a6f;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.feature-tile b{font-size:11px;line-height:1.35;color:#2c5854;font-weight:850}
+.sales-module{border-top:1px solid #dce9df;margin-top:16px;padding-top:13px}
+.sales-module summary{list-style:none;cursor:pointer;border:1px solid #a9d4c2;color:#2d7569;background:#eff9f1;padding:11px 13px;border-radius:6px;min-height:44px;font-size:13px;font-weight:850;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.sales-module summary::-webkit-details-marker{display:none}
+.sales-module summary .summary-arrow{font-size:17px;transition:transform .2s ease}
+.sales-module[open] summary .summary-arrow{transform:rotate(45deg)}
+.sales-module .benefits{padding-top:8px}.sales-module .demo-box{margin-top:13px}
+.show-all-lessons{min-height:42px;border:1px solid #8db8a5;color:#225e55;font-size:12px;font-weight:850;background:#eaf7ed;border-radius:6px;padding:9px 14px;margin-bottom:12px}
+.show-all-lessons:hover{background:#d5f2e1}
+.product-card .card-footer{margin-top:18px}
+.product-card .audience-block{padding:15px 0 12px}
+.product-card .selling-start{margin-top:12px}
+.product-card .product-tagline{margin-top:12px}
+.product-card .product-metrics{margin-top:12px}
+.product-card .product-body{padding-bottom:20px}
+@media(max-width:950px){
+ .visual-lab-section{padding:72px 0}
+ .speed-card{grid-template-columns:72px 1fr;gap:11px}
+ .speed-photo{width:72px;height:87px}
+ .visual-bars{gap:12px}
+ .route-notes{align-items:flex-start}
+}
+@media(max-width:650px){
+ .visual-lab-section{padding:62px 0 64px}
+ .visual-caption-badge{display:none}
+ .route-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;padding:8px}
+ .route-tab{padding:9px 6px;align-items:center;text-align:center;font-size:9px;letter-spacing:0;min-height:62px}
+ .route-tab strong{font-size:13px;line-height:1.25}
+ .route-tab span{font-size:8px}
+ .pause-route{grid-column:1/-1;min-height:38px;margin:3px 0 0}
+ .route-picture{min-height:188px}.route-picture svg{height:192px}
+ .route-notes{display:block;padding:16px 14px;min-height:0}
+ .route-notes h3{font-size:18px}.route-notes p{margin-top:8px;font-size:12px}
+ .visual-compare{padding:17px 13px}
+ .visual-compare-header{display:block}.visual-compare-header h3{font-size:21px}.visual-compare-header p{margin-top:8px}
+ .visual-bars{grid-template-columns:1fr;gap:10px;padding-top:15px}
+ .speed-card{grid-template-columns:76px 1fr;padding:12px}
+ .speed-photo{width:76px;height:82px}
+ .speed-copy b{font-size:19px}.speed-copy strong{font-size:17px}
+ .product-media::before{inset:26px 35px}
+ .feature-tiles{gap:5px}
+ .feature-tile{padding:8px 3px}
+ .feature-tile b{font-size:10px}
+ .feature-symbol{width:30px;height:30px}
+ .hero-visual::before{width:220px;height:220px;top:18px}.hero-visual::after{width:160px;height:160px;top:50px}
+}
+@media(prefers-reduced-motion:reduce){
+ .pulse-symbol,.route-svg-line,.speed-meter>i,.hero-visual::before,.hero-visual::after{animation:none!important}
+ .product-card:hover .product-media img{transform:none}
+}

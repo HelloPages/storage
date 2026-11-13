@@ -1,0 +1,615 @@
+{
+  "meta": {
+    "title": "儲存實戰學院",
+    "subtitle": "台灣三星儲存設備｜2026 產品教育訓練示範",
+    "release": "2026-11-13",
+    "notice": "非 Samsung 官方核可網站。僅供銷售教育訓練示範；產品圖片與規格來自 Samsung 台灣公開資料。無購買連結、無個資蒐集、無付費功能。",
+    "priceNotice": "價格為指定容量於三星新聞中心公布時的上市建議售價，不代表目前通路售價；各容量及供貨請查官方。"
+  },
+  "needs": [
+    {
+      "id": "gaming",
+      "title": "高效能遊戲主機",
+      "hint": "對高規格新世代 PC／大型遊戲讀取有要求",
+      "icon": "cpu"
+    },
+    {
+      "id": "pc",
+      "title": "日常電腦升級",
+      "hint": "想替電腦擴充系統或創作檔案儲存空間",
+      "icon": "monitor"
+    },
+    {
+      "id": "film",
+      "title": "高解析度影像創作",
+      "hint": "外拍、RAW 影片、專案移動，重視高效能",
+      "icon": "film"
+    },
+    {
+      "id": "mobile",
+      "title": "跨裝置隨身備份",
+      "hint": "電腦、筆電與相容行動裝置間帶著走",
+      "icon": "briefcase"
+    },
+    {
+      "id": "action",
+      "title": "空拍／運動攝影",
+      "hint": "相容 microSDXC 的拍攝裝置，需要快速取用",
+      "icon": "camera"
+    },
+    {
+      "id": "family",
+      "title": "手機照片／容量擴充",
+      "hint": "日常照片、遊戲、應用程式，重視容量彈性",
+      "icon": "image"
+    }
+  ],
+  "products": [
+    {
+      "id": "9100pro",
+      "rank": 1,
+      "category": "internal",
+      "categoryLabel": "內接 NVMe SSD",
+      "name": "9100 PRO",
+      "edition": "PCIe 5.0 · 含散熱片",
+      "sample": "1TB｜MZ-VAP1T0CW",
+      "flag": "旗艦效能",
+      "accent": "aqua",
+      "image": "assets/9100pro.webp",
+      "tagline": "讓新世代 PC，跑在靈感之前。",
+      "subline": "為高負載遊戲、效能工作站與進階玩家打造的內接旗艦。",
+      "audience": "重視高速遊戲載入、專業運算、追求 Gen 5 效能的高階 PC 玩家",
+      "lead": "「正在組新電腦嗎？想把儲存效能也一次升級到頂嗎？」",
+      "highlights": [
+        {
+          "title": "Gen 5 高速",
+          "text": "PCIe 5.0 x4 NVMe，釋放新平台的儲存潛力"
+        },
+        {
+          "title": "極速素材載入",
+          "text": "1TB 含散熱片版連續讀取最高 14,700 MB/s"
+        },
+        {
+          "title": "散熱設計",
+          "text": "專用散熱片版本，強調高負載下的熱管理"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "連續讀取（1TB）",
+          "value": "14,700",
+          "unit": "MB/s"
+        },
+        {
+          "label": "介面",
+          "value": "PCIe 5.0",
+          "unit": "x4"
+        },
+        {
+          "label": "代表容量",
+          "value": "1 TB",
+          "unit": "含散熱片"
+        }
+      ],
+      "specs": [
+        [
+          "正式型號",
+          "MZ-VAP1T0CW"
+        ],
+        [
+          "類型",
+          "M.2 2280 內接 NVMe SSD"
+        ],
+        [
+          "PCIe 介面",
+          "PCIe 5.0 x4 · NVMe 2.0"
+        ],
+        [
+          "連續讀取最高",
+          "14,700 MB/s（1TB）"
+        ],
+        [
+          "連續寫入最高",
+          "13,300 MB/s（1TB）"
+        ],
+        [
+          "保固",
+          "5 年有限保固"
+        ],
+        [
+          "適合對象",
+          "高階 PCIe 5.0 電腦與高負載應用"
+        ]
+      ],
+      "demo": "搭配支援 PCIe 5.0 的電腦，展示大型遊戲與檔案開啟；說明 1TB 代表版本與不同容量規格。",
+      "caution": "安裝前確認 M.2 插槽、PCIe 世代與散熱片空間；速度屬 Samsung 指定條件下最高值。",
+      "msrp": 7029,
+      "msrpCapacity": "1TB 含散熱片",
+      "launch": "2025-03-28",
+      "official": "https://www.samsung.com/tw/memory-storage/nvme-ssd/9100-pro-1tb-nvme-pcie-gen-5-mz-vap1t0cw/",
+      "priceSource": "https://news.samsung.com/tw/%E4%B8%89%E6%98%9F%E6%8E%A8%E5%87%BA%E6%90%AD%E8%BC%89pcie-5-0%E4%BB%8B%E3%80%81%E5%85%A8%E6%96%B0%E6%B6%88%E8%B2%BB%E7%B4%9Assd-9100-pro%E5%9B%BA%E6%85%8B%E7%A1%AC%E7%A2%9F",
+      "needs": [
+        "gaming",
+        "pc",
+        "film"
+      ],
+      "comparison": "內接效能旗艦"
+    },
+    {
+      "id": "990ssd",
+      "rank": 2,
+      "category": "internal",
+      "categoryLabel": "內接 NVMe SSD",
+      "name": "990 SSD",
+      "edition": "2026 新款 · PCIe 4.0",
+      "sample": "1TB｜MZ-V9V1T0BW",
+      "flag": "2026 新品",
+      "accent": "gold",
+      "image": "assets/990ssd.webp",
+      "tagline": "日常升級，也能很有感。",
+      "subline": "兼顧遊戲、工作與創作的 PCIe 4.0 NVMe 升級選擇。",
+      "audience": "準備替桌機或筆電升級內接 SSD 的一般用戶、學生與內容創作者",
+      "lead": "「電腦最常做哪些事？是開機、遊戲，還是處理大型檔案？」",
+      "highlights": [
+        {
+          "title": "主流升級",
+          "text": "PCIe 4.0 x4 NVMe，適合相容的 PC 儲存升級"
+        },
+        {
+          "title": "多元用途",
+          "text": "遊戲、影音創作和文書檔案皆可受益"
+        },
+        {
+          "title": "管理工具",
+          "text": "Samsung Magician 協助管理硬碟健康與韌體"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "連續讀取（1TB）",
+          "value": "7,150",
+          "unit": "MB/s"
+        },
+        {
+          "label": "介面",
+          "value": "PCIe 4.0",
+          "unit": "x4"
+        },
+        {
+          "label": "代表容量",
+          "value": "1 TB",
+          "unit": "M.2"
+        }
+      ],
+      "specs": [
+        [
+          "正式型號",
+          "MZ-V9V1T0BW"
+        ],
+        [
+          "類型",
+          "M.2 2280 內接 NVMe SSD"
+        ],
+        [
+          "介面",
+          "PCIe 4.0 x4 · NVMe 2.0"
+        ],
+        [
+          "連續讀取最高",
+          "7,150 MB/s（1TB）"
+        ],
+        [
+          "連續寫入最高",
+          "6,450 MB/s（1TB）"
+        ],
+        [
+          "工具",
+          "Samsung Magician"
+        ],
+        [
+          "保固",
+          "3 年有限保固"
+        ]
+      ],
+      "demo": "以系統啟動、遊戲載入與大量檔案工作流程，向顧客展示內接 SSD 升級能改善的日常感受。",
+      "caution": "請先確認裝置可安裝 M.2 NVMe；不能把其他系列容量規格直接套到本款 1TB。",
+      "msrp": 9569,
+      "msrpCapacity": "1TB",
+      "launch": "2026-07-15",
+      "official": "https://www.samsung.com/tw/memory-storage/nvme-ssd/990-1tb-nvme-pcie-gen-4-mz-v9v1t0bw/",
+      "priceSource": "https://news.samsung.com/tw/%E4%B8%89%E6%98%9F%E6%8E%A8%E5%87%BA%E5%85%A8%E6%96%B0samsung-990-ssd%E5%9B%BA%E6%85%8B%E7%A1%AC%E7%A2%9F-%E4%BB%A5%E5%8D%93%E8%B6%8A%E6%95%88%E8%83%BD%E8%88%87%E6%8F%90%E5%8D%87%E8%83%BD%E6%BA%90",
+      "needs": [
+        "pc",
+        "gaming",
+        "film"
+      ],
+      "comparison": "日常 PC 升級"
+    },
+    {
+      "id": "p9",
+      "rank": 3,
+      "category": "portable",
+      "categoryLabel": "外接 USB4 SSD",
+      "name": "P9 Portable SSD",
+      "edition": "2026 新品 · USB4",
+      "sample": "1TB｜MU-PJ1T0G/WW",
+      "flag": "CES 2026 創新獎",
+      "accent": "aqua",
+      "image": "assets/p9.webp",
+      "tagline": "創作現場，不必等進度條。",
+      "subline": "將高解析影像與大型專案的行動儲存效率推進一級。",
+      "audience": "攝影師、影像創作者、RAW 素材處理者及需要高速移動資料的專業工作者",
+      "lead": "「常常要把大型影片素材帶去不同電腦剪輯嗎？」",
+      "highlights": [
+        {
+          "title": "USB4 旗艦",
+          "text": "最高 4,000 MB/s 連續讀取，高速處理大型素材"
+        },
+        {
+          "title": "專業行動工作流",
+          "text": "P9 系列支援高解析度影像創作情境"
+        },
+        {
+          "title": "堅固便攜",
+          "text": "2 公尺跌落測試與金屬質感機身"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "連續讀取最高",
+          "value": "4,000",
+          "unit": "MB/s"
+        },
+        {
+          "label": "介面",
+          "value": "USB4",
+          "unit": "40Gbps"
+        },
+        {
+          "label": "代表容量",
+          "value": "1 TB",
+          "unit": "旗艦 PSSD"
+        }
+      ],
+      "specs": [
+        [
+          "正式型號",
+          "MU-PJ1T0G/WW"
+        ],
+        [
+          "類型",
+          "USB4 Gen 3x2 外接式 SSD"
+        ],
+        [
+          "連續讀取最高",
+          "4,000 MB/s"
+        ],
+        [
+          "連續寫入最高（1TB）",
+          "3,700 MB/s"
+        ],
+        [
+          "官方系列容量",
+          "1TB、2TB、4TB、8TB"
+        ],
+        [
+          "耐用性",
+          "2 公尺跌落測試"
+        ],
+        [
+          "適合對象",
+          "大型 RAW／高解析度影片等高負載創作"
+        ]
+      ],
+      "demo": "模擬外拍後的大型素材匯入：介紹相容 USB4 電腦與連接線，演示照片／影片檔案的移動工作流程。",
+      "caution": "不同容量的最高寫入效能可能不同，官方 1TB 頁面列 3,700 MB/s；實際速度依設備與線材。",
+      "msrp": 12759,
+      "msrpCapacity": "1TB",
+      "launch": "2026-09-14",
+      "official": "https://www.samsung.com/tw/memory-storage/portable-ssd/p9-portable-ssd-1tb-jet-black-mu-pj1t0g-ww/",
+      "priceSource": "https://news.samsung.com/tw/%E4%B8%89%E6%98%9F%E7%99%BC%E8%A1%A8%E5%85%A8%E6%96%B0p9%E8%88%87p7%E7%A7%BB%E5%8B%95%E5%9B%BA%E6%85%8B%E7%A1%AC%E7%A2%9F-%E6%90%AD%E8%BC%89usb4%E4%BB%8B%E9%9D%A2%E6%89%93%E9%80%A0%E9%AB%98%E9%80%9F",
+      "needs": [
+        "film",
+        "mobile"
+      ],
+      "comparison": "專業創作行動儲存"
+    },
+    {
+      "id": "p7",
+      "rank": 4,
+      "category": "portable",
+      "categoryLabel": "外接 USB4 SSD",
+      "name": "P7 Portable SSD",
+      "edition": "2026 新品 · USB4",
+      "sample": "1TB｜MU-PF1T0G/WW",
+      "flag": "跨裝置靈活",
+      "accent": "blue",
+      "image": "assets/p7.webp",
+      "tagline": "把重要資料，輕鬆帶著走。",
+      "subline": "USB4 與廣泛裝置相容性，為日常工作與娛樂而生。",
+      "audience": "跨筆電、桌機、手機等相容裝置移動資料的上班族、學生與一般使用者",
+      "lead": "「照片、工作資料常要在不同設備間移動嗎？」",
+      "highlights": [
+        {
+          "title": "USB4 便利",
+          "text": "搭載 USB4 高速傳輸介面，日常備份更有效率"
+        },
+        {
+          "title": "多裝置情境",
+          "text": "支援多類相容主機，資料隨時帶著走"
+        },
+        {
+          "title": "行動耐用",
+          "text": "2 公尺跌落測試，兼顧輕巧及實用"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "傳輸介面",
+          "value": "USB4",
+          "unit": "Gen 3x2"
+        },
+        {
+          "label": "代表容量",
+          "value": "1 TB",
+          "unit": "可攜式"
+        },
+        {
+          "label": "產品定位",
+          "value": "跨裝置",
+          "unit": "備份"
+        }
+      ],
+      "specs": [
+        [
+          "正式型號",
+          "MU-PF1T0G/WW"
+        ],
+        [
+          "類型",
+          "USB4 Gen 3x2 外接式 SSD"
+        ],
+        [
+          "最高系列連續讀取",
+          "4,000 MB/s（官方產品頁）"
+        ],
+        [
+          "系列容量",
+          "1TB、2TB、4TB、8TB"
+        ],
+        [
+          "耐用性",
+          "2 公尺跌落測試"
+        ],
+        [
+          "適合用途",
+          "多裝置檔案備份／移動"
+        ]
+      ],
+      "demo": "讓客人想像從桌機複製專案到筆電，接著拿到另一個工作地點；展示可攜與連接方式。",
+      "caution": "USB4 高速需相容主機與線材，實際效能依設備而異；上市容量與顏色依通路。",
+      "msrp": 10629,
+      "msrpCapacity": "1TB",
+      "launch": "2026-09-14",
+      "official": "https://www.samsung.com/tw/memory-storage/portable-ssd/p7-portable-ssd-1tb-black-mu-pf1t0g-ww/",
+      "priceSource": "https://news.samsung.com/tw/%E4%B8%89%E6%98%9F%E7%99%BC%E8%A1%A8%E5%85%A8%E6%96%B0p9%E8%88%87p7%E7%A7%BB%E5%8B%95%E5%9B%BA%E6%85%8B%E7%A1%AC%E7%A2%9F-%E6%90%AD%E8%BC%89usb4%E4%BB%8B%E9%9D%A2%E6%89%93%E9%80%A0%E9%AB%98%E9%80%9F",
+      "needs": [
+        "mobile",
+        "film",
+        "pc"
+      ],
+      "comparison": "日常多裝置移動儲存"
+    },
+    {
+      "id": "t9microsd",
+      "rank": 5,
+      "category": "card",
+      "categoryLabel": "microSD 記憶卡",
+      "name": "T9 microSD",
+      "edition": "2026 新品 · UHS-I",
+      "sample": "256GB｜MB-MH256T/WW",
+      "flag": "創作與攝影",
+      "accent": "red",
+      "image": "assets/t9microsd.webp",
+      "tagline": "珍貴的每一格，都值得好好保存。",
+      "subline": "為運動攝影、無人機及影像工作流程打造的高速 microSD。",
+      "audience": "需要相容 microSDXC 記憶卡的運動攝影機、無人機及創作裝置使用者",
+      "lead": "「平常是拍運動影像、空拍，還是需要快速轉存照片？」",
+      "highlights": [
+        {
+          "title": "快速取用",
+          "text": "最高 200 MB/s 讀取，方便大量影像匯入"
+        },
+        {
+          "title": "拍攝應用",
+          "text": "U3／V30／A2 速度等級，適合相容錄影設備"
+        },
+        {
+          "title": "多重防護",
+          "text": "官方列有六重防護設計，因應行動場景"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "連續讀取最高",
+          "value": "200",
+          "unit": "MB/s"
+        },
+        {
+          "label": "級別",
+          "value": "V30",
+          "unit": "U3 · A2"
+        },
+        {
+          "label": "代表容量",
+          "value": "256 GB",
+          "unit": "microSDXC"
+        }
+      ],
+      "specs": [
+        [
+          "正式型號",
+          "MB-MH256T/WW"
+        ],
+        [
+          "類型",
+          "microSDXC 記憶卡"
+        ],
+        [
+          "介面",
+          "UHS-I"
+        ],
+        [
+          "連續讀取最高",
+          "200 MB/s"
+        ],
+        [
+          "連續寫入最高",
+          "130 MB/s"
+        ],
+        [
+          "速度等級",
+          "U3、V30、A2、Class 10"
+        ],
+        [
+          "保固",
+          "3 年有限保固"
+        ]
+      ],
+      "demo": "展示 microSD 卡尺寸及相容攝影設備的記憶卡插槽，模擬拍攝後將影像轉到電腦的流程。",
+      "caution": "請核對設備支援 microSDXC、所需 V30 錄影條件與讀卡機速度；連續監控錄影等用途不在部分保固適用範圍。",
+      "msrp": 3289,
+      "msrpCapacity": "256GB",
+      "launch": "2026-05-04",
+      "official": "https://www.samsung.com/tw/memory-storage/memory-card/t9-microsd-card-256gb-mb-mh256t-ww/",
+      "priceSource": "https://news.samsung.com/tw/%E4%B8%89%E6%98%9F%E6%8E%A8%E5%87%BA%E5%85%A8%E6%96%B0t7%E8%88%87t9-microsd%E8%A8%98%E6%86%B6%E5%8D%A1-%E5%BC%B7%E5%8C%96%E5%8F%AF%E6%94%9C%E5%BC%8F%E5%84%B2%E5%AD%98%E7%94%A2%E5%93%81%E5%B8%83",
+      "needs": [
+        "action",
+        "film"
+      ],
+      "comparison": "高速攝錄 microSD"
+    },
+    {
+      "id": "t7microsd",
+      "rank": 6,
+      "category": "card",
+      "categoryLabel": "microSD 記憶卡",
+      "name": "T7 microSD",
+      "edition": "2026 新品 · UHS-I",
+      "sample": "256GB｜MB-MB256T/WW",
+      "flag": "日常擴充",
+      "accent": "blue",
+      "image": "assets/t7microsd.webp",
+      "tagline": "空間多一點，精彩也多一點。",
+      "subline": "拍照、影片、遊戲與日常裝置的高彈性擴充選擇。",
+      "audience": "需要相容 microSDXC 擴充照片、影片、遊戲資料的手機與裝置使用者",
+      "lead": "「手機或遊戲裝置，最常遇到的是照片太多還是容量不夠？」",
+      "highlights": [
+        {
+          "title": "彈性容量",
+          "text": "產品系列最高可達 1TB，為回憶保留空間"
+        },
+        {
+          "title": "穩定易用",
+          "text": "最高 170 MB/s 讀取，搭配相容裝置使用"
+        },
+        {
+          "title": "多用途",
+          "text": "手機、平板及具備 microSDXC 插槽的設備皆可評估"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "連續讀取最高",
+          "value": "170",
+          "unit": "MB/s"
+        },
+        {
+          "label": "系列容量",
+          "value": "1 TB",
+          "unit": "最高"
+        },
+        {
+          "label": "代表容量",
+          "value": "256 GB",
+          "unit": "microSDXC"
+        }
+      ],
+      "specs": [
+        [
+          "正式型號",
+          "MB-MB256T/WW"
+        ],
+        [
+          "類型",
+          "microSDXC 記憶卡"
+        ],
+        [
+          "介面",
+          "UHS-I"
+        ],
+        [
+          "連續讀取最高",
+          "170 MB/s"
+        ],
+        [
+          "系列最大容量",
+          "1TB（依機型與販售）"
+        ],
+        [
+          "速度等級",
+          "U3、V30、A2、Class 10"
+        ],
+        [
+          "保固",
+          "3 年有限保固"
+        ]
+      ],
+      "demo": "從手機照片／掌上遊戲使用情境出發，示範如何查裝置是否有 microSDXC 插槽，再選合適容量。",
+      "caution": "部分手機與掌機不具備 microSDXC 插槽；安裝前請確認設備規格、格式與容量支援。",
+      "msrp": 2629,
+      "msrpCapacity": "256GB",
+      "launch": "2026-05-04",
+      "official": "https://www.samsung.com/tw/memory-storage/memory-card/t7-microsd-card-256gb-mb-mb256t-ww/",
+      "priceSource": "https://news.samsung.com/tw/%E4%B8%89%E6%98%9F%E6%8E%A8%E5%87%BA%E5%85%A8%E6%96%B0t7%E8%88%87t9-microsd%E8%A8%98%E6%86%B6%E5%8D%A1-%E5%BC%B7%E5%8C%96%E5%8F%AF%E6%94%9C%E5%BC%8F%E5%84%B2%E5%AD%98%E7%94%A2%E5%93%81%E5%B8%83",
+      "needs": [
+        "family",
+        "action",
+        "mobile"
+      ],
+      "comparison": "日常容量擴充 microSD"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "NVMe × PCIe",
+      "label": "內接式高速通道",
+      "explain": "放進電腦 M.2 插槽的內接 SSD，多使用 PCIe 連接。選購時要先確認主機是否有相容的插槽、世代與空間。"
+    },
+    {
+      "term": "USB4 Portable SSD",
+      "label": "把資料帶著走",
+      "explain": "用線材連接相容電腦或行動設備的外接式 SSD。高速傳輸還需要相容的主機埠與傳輸線，不能只看 SSD 上的最高數字。"
+    },
+    {
+      "term": "microSDXC",
+      "label": "相容插槽很重要",
+      "explain": "體積小、適合支援 microSDXC 的手機、相機與掌機。速度等級、裝置格式和容量相容性都應一起確認。"
+    },
+    {
+      "term": "MB/s 與 Gb/s",
+      "label": "資料速率不是同一單位",
+      "explain": "MB/s 常用來表示檔案傳輸速度；Gb/s 常標示介面位元率。單位不能直接把數字拿來比較，且裝置實際效能會受系統影響。"
+    },
+    {
+      "term": "V30 與 A2",
+      "label": "看應用情境",
+      "explain": "V30 是持續錄影速度等級；A2 關聯到應用程式隨機讀寫效能，選購時要看裝置真正需要什麼。"
+    },
+    {
+      "term": "保護與備份",
+      "label": "防護不代表不用備份",
+      "explain": "產品耐用設計能降低部分使用風險，但重要資料仍應保留多份備份；適用保固與實際測試條件應查看官方說明。"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "9100pro": {
+    "officialPage": "https://www.samsung.com/tw/memory-storage/nvme-ssd/9100-pro-1tb-nvme-pcie-gen-5-mz-vap1t0cw/",
+    "officialImage": "https://images.samsung.com/is/image/samsung/p6pim/tw/mz-vap1t0cw/gallery/tw-9100-pro-nvme-m2-ssd-543466-mz-vap1t0cw-545766088?$1164_776_PNG$",
+    "sha256": "31551d568624d943e7067046c96bdaabc0b13acfb0721dd050d121f0b6ddef86",
+    "bytes": 36840,
+    "dimensions": [
+      1150,
+      767
+    ]
+  },
+  "990ssd": {
+    "officialPage": "https://www.samsung.com/tw/memory-storage/nvme-ssd/990-1tb-nvme-pcie-gen-4-mz-v9v1t0bw/",
+    "officialImage": "https://images.samsung.com/is/image/samsung/p6pim/tw/mz-v9v1t0bw/gallery/tw-990-nvme-m2-ssd-mz-v9v1t0bw-553905447?$1164_776_PNG$",
+    "sha256": "82bd72154dd2441aa548fa9807f1c504a46bd30773244aaa431946ef068a8b94",
+    "bytes": 39096,
+    "dimensions": [
+      1150,
+      767
+    ]
+  },
+  "p9": {
+    "officialPage": "https://www.samsung.com/tw/memory-storage/portable-ssd/p9-portable-ssd-1tb-jet-black-mu-pj1t0g-ww/",
+    "officialImage": "https://images.samsung.com/is/image/samsung/p6pim/tw/mu-pj1t0g-ww/gallery/tw-portable-ssd-p9-mu-pj1t0g-ww-554382865?$1164_776_PNG$",
+    "sha256": "51f06701102c2c97e3768e35ab11fa5d63f53c57c42d6f99178f14fb94b8765e",
+    "bytes": 134206,
+    "dimensions": [
+      1150,
+      767
+    ]
+  },
+  "p7": {
+    "officialPage": "https://www.samsung.com/tw/memory-storage/portable-ssd/p7-portable-ssd-1tb-black-mu-pf1t0g-ww/",
+    "officialImage": "https://images.samsung.com/is/image/samsung/p6pim/tw/mu-pf1t0g-ww/gallery/tw-portable-ssd-p7-mu-pf1t0g-ww-554382703?$1164_776_PNG$",
+    "sha256": "8ea49b57e1d28492dfaa742215de80c7c0adaa035b207a2be8fe8f113773b49c",
+    "bytes": 26962,
+    "dimensions": [
+      1150,
+      767
+    ]
+  },
+  "t9microsd": {
+    "officialPage": "https://www.samsung.com/tw/memory-storage/memory-card/t9-microsd-card-256gb-mb-mh256t-ww/",
+    "officialImage": "https://images.samsung.com/is/image/samsung/p6pim/tw/mb-mh256t-ww/gallery/tw-t9-microsd-card-mb-mh256t-ww-552114719?$1164_776_PNG$",
+    "sha256": "d8bc45cc2514122c954c2050a48901f339483632cc7dcb5a988c0fde1a7c3456",
+    "bytes": 34190,
+    "dimensions": [
+      1150,
+      767
+    ]
+  },
+  "t7microsd": {
+    "officialPage": "https://www.samsung.com/tw/memory-storage/memory-card/t7-microsd-card-256gb-mb-mb256t-ww/",
+    "officialImage": "https://images.samsung.com/is/image/samsung/p6pim/tw/mb-mb256t-ww/gallery/tw-t7-microsd-card-mb-mb256t-ww-552114165?$1164_776_PNG$",
+    "sha256": "5f01d3188ce7a9b86e3b2d578e1d1ae242aebe2e16f90ab2a9b88bb7e059e541",
+    "bytes": 40542,
+    "dimensions": [
+      1150,
+      767
+    ]
+  }
+}

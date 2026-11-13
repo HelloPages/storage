@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#101f29">
+  <meta name="description" content="Samsung 台灣儲存產品公開資料教育訓練示範：2026 最新 SSD、USB4 外接 SSD、microSD 的客群推薦、比較、實機演示及 10 題互動情境測驗。">
+  <link rel="icon" href="data:,">
+  <link rel="preload" href="assets/p9.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="visual-lab.css">
+  <script src="app.js" defer></script>
+  <script src="visual-lab.js" defer></script>
+  <title>儲存實戰學院｜2026 Storage Learning Lab</title>
+</head>
+<body>
+<header class="site-header">
+  <div class="shell header-content">
+    <a class="identity" href="#top" aria-label="回到儲存實戰學院首頁">
+      <span class="symbol" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+      <span class="identity-words"><strong>STORAGE / FIELD LAB</strong><small>儲存設備銷售實戰學院</small></span>
+    </a>
+    <nav class="header-links" aria-label="主導覽">
+      <a href="#selector">需求選購</a><a href="#products">產品教學</a><a href="#compare">選購比較</a><a href="#knowledge">知識教室</a>
+    </nav>
+    <a class="header-cta" href="#quiz">開始 10 題挑戰 <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
+<main id="top">
+  <section class="hero">
+    <div class="hero-grid shell">
+      <div class="hero-copy">
+        <div class="eyebrow"><i></i> TAIWAN STORAGE / TRAINING EDITION 2026</div>
+        <p class="hero-kicker">不只是把規格背熟。</p>
+        <h1>讓每一次<br><em>儲存推薦，</em><br>都更有說服力。</h1>
+        <p class="hero-description">從顧客的問題出發，找到真正適合的 SSD 與記憶卡。研究官方產品、理解優勢、練習實際介紹——用一個網站完成。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#selector">從顧客需求開始 <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="#products">探索 6 款選品 <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="hero-source">依 Samsung 台灣 2025–2026 官方產品頁與新聞稿製作 · 2026/11/13 核對</p>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-halo"></div>
+        <span class="hero-corner-label">FEATURED / P9</span>
+        <img class="hero-image" src="assets/p9.webp" width="1150" height="767" alt="Samsung Portable SSD P9 官方產品主視覺">
+        <div class="visual-info"><div><span>旗艦移動儲存</span><strong>P9 Portable SSD</strong></div><span class="visual-index">01 / 06</span></div>
+        <div class="hero-code">USB4 • PROFESSIONAL CREATORS • 2026</div>
+      </div>
+    </div>
+    <div class="shell stat-bar"><div><b>06</b><span>官方近期主力選品</span></div><div><b>03</b><span>儲存產品大類</span></div><div><b>10</b><span>正向銷售情境題</span></div><div><b>NT$ 0</b><span>運作所需 API 費用</span></div></div>
+  </section>
+
+  <section class="section visual-lab-section" id="visual-lab">
+  <div class="shell">
+    <div class="section-overline"><span>00 / INTERACTIVE STORAGE MAP</span><span class="faint-line"></span><span>看圖理解三種儲存路線</span></div>
+    <div class="section-intro visual-lab-intro">
+      <div><h2>別急著背數字，<br><em>先看資料怎麼走。</em></h2>
+      <p>按一按，切換內接 SSD、USB4 外接 SSD、microSD 三種情境。用原創示意動畫理解儲存裝置扮演的角色。</p></div>
+      <div class="visual-caption-badge"><span class="pulse-symbol"></span> INTERACTIVE LEARNING</div>
+    </div>
+    <div class="visual-lab-panel">
+      <div class="route-controls" role="tablist" aria-label="儲存裝置情境">
+        <button type="button" class="route-tab" role="tab" aria-selected="false" data-route="internal">01 <strong>內接 NVMe</strong><span>INTERNAL SSD</span></button>
+        <button type="button" class="route-tab is-active" role="tab" aria-selected="true" data-route="portable">02 <strong>USB4 外接</strong><span>PORTABLE SSD</span></button>
+        <button type="button" class="route-tab" role="tab" aria-selected="false" data-route="card">03 <strong>microSD 卡</strong><span>MEMORY CARD</span></button>
+        <button type="button" id="pauseRoute" class="pause-route" aria-pressed="false" title="暫停／繼續動畫">暫停動畫 <span>Ⅱ</span></button>
+      </div>
+      <div class="route-picture" id="routeGraphic">
+        <svg id="routeSvg" viewBox="0 0 900 295" role="img" aria-label="相容電腦與外接 SSD 的 USB4 資料移動示意圖">
+          <text x="450" y="146" text-anchor="middle" fill="#8edccb" font-size="22">互動示意圖載入中⋯</text>
+        </svg>
+      </div>
+      <div class="route-notes"><div><span class="route-label">USE CASE</span><h3 id="routeTitle">行動儲存，資料跟著走。</h3></div><p id="routeDescription">資料路徑為原創示意，不代表實測傳輸速率；請依官方機型、設備與線材條件確認。</p></div>
+    </div>
+    <div class="visual-compare">
+      <div class="visual-compare-header">
+        <div><span class="mini-code">SAME CATEGORY / OFFICIAL MAX</span><h3>同類型速度，一眼看懂。</h3></div>
+        <p>依各產品官網列示的最高連續讀取值繪製比例圖。不同品類不互相比較，也不代表實測成績。</p>
+      </div>
+      <div class="visual-bars" id="speedBars" aria-live="polite">正在整理正式規格⋯</div>
+    </div>
+  </div>
+</section>
+  <section class="section section-needs" id="selector">
+    <div class="shell">
+      <div class="section-overline"><span>01 / NEEDS FIRST</span><span class="faint-line"></span><span>銷售從提問開始</span></div>
+      <div class="section-intro">
+        <div><h2>先理解他要做什麼，<br><em>再推薦他買什麼。</em></h2><p>不是先報最快的速度，而是先找到使用情境。點選顧客需求，看看最適合從哪款開始介紹。</p></div>
+        <div class="intro-side"><span class="side-kicker">SELLING PRINCIPLE</span><strong>對的需求<br>比更多數字重要。</strong></div>
+      </div>
+      <div class="needs-grid" id="needsGrid" aria-label="選擇顧客需求"></div>
+      <div id="recommendation" class="recommendation" aria-live="polite" aria-atomic="true">
+        <div class="recommendation-loading">載入產品推薦中⋯</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section catalog-section" id="products">
+    <div class="shell">
+      <div class="section-overline"><span>02 / PRODUCT PLAYBOOK</span><span class="faint-line"></span><span>本次精選 6 款</span></div>
+      <div class="section-intro">
+        <div><h2>用產品優勢，<br><em>講出顧客聽得懂的價值。</em></h2><p>每款都根據真正的官方資料挑選賣點。先讀推薦對象與開場句，再看如何現場展示。</p></div>
+        <div class="subtle-note">官方圖片 · 產品資料 · 真實情境<br><strong>不採用 AI 重畫產品。</strong></div>
+      </div>
+      <div class="catalog-tools">
+        <div class="filters" id="categoryFilters" role="group" aria-label="產品類別篩選">
+          <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">全部產品 <span>06</span></button>
+          <button type="button" class="filter" data-filter="internal" aria-pressed="false">內接 SSD</button>
+          <button type="button" class="filter" data-filter="portable" aria-pressed="false">外接 SSD</button>
+          <button type="button" class="filter" data-filter="card" aria-pressed="false">microSD</button>
+        </div>
+        <label class="catalog-search"><span class="search-icon" aria-hidden="true">⌕</span><input id="productSearch" type="search" placeholder="搜尋型號、功能或用途…" aria-label="搜尋產品"></label>
+      </div>
+      <div class="product-grid" id="productGrid" aria-live="polite"><p class="loading">正在整理產品資料⋯</p></div>
+      <div class="catalog-footnote">不同品類的速度數字不能直接排名；實際表現與主機介面、容量、線材及測試條件有關。各項請以官方完整型號資料為準。</div>
+    </div>
+  </section>
+
+  <section class="section compare-section" id="compare">
+    <div class="shell">
+      <div class="section-overline"><span>03 / CHOOSE WITH CONFIDENCE</span><span class="faint-line"></span><span>比較的是需求，而不只是數字</span></div>
+      <div class="section-intro">
+        <div><h2>不是每台都比同一欄。<br><em>同類型，才有可比性。</em></h2><p>內接、外接與記憶卡各有自己的選購脈絡。依客人真正要解決的問題，選擇最適合的方向。</p></div>
+      </div>
+      <div id="compareGrid" class="compare-grid"></div>
+      <div class="guided-steps">
+        <div class="guided-lead">一分鐘推薦法</div><div><strong>01</strong><span>問用途</span></div><div><strong>02</strong><span>確認設備</span></div><div><strong>03</strong><span>選容量</span></div><div><strong>04</strong><span>現場示範</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section knowledge-section" id="knowledge">
+    <div class="shell">
+      <div class="section-overline"><span>04 / KNOWLEDGE MADE SIMPLE</span><span class="faint-line"></span><span>把技術講成人話</span></div>
+      <div class="section-intro"><div><h2>規格可以看表，<br><em>觀念才要真的懂。</em></h2><p>從這次選品中動態整理需要的技術概念，講得清楚，才不會讓顧客越聽越疑惑。</p></div></div>
+      <div id="glossaryGrid" class="glossary-grid"></div>
+    </div>
+  </section>
+
+  <section class="section quiz-section" id="quiz">
+    <div class="shell quiz-shell">
+      <div class="quiz-intro">
+        <div class="section-overline"><span>05 / SALES CHALLENGE</span><span class="faint-line"></span><span>練習判斷需求</span></div>
+        <h2>10 題實戰，<br><em>把知識變成話術。</em></h2>
+        <p>不考冷僻數字，也不把缺點當答案。10 位不同顧客、10 個真實銷售情境，練習選擇真正合適的產品與說法。</p>
+        <div class="quiz-promise"><span>✓ 答完立即解析</span><span>✓ 回到對應產品</span><span>✓ 可反覆練習</span><span>✓ 不蒐集個資</span></div>
+      </div>
+      <div class="quiz-card" id="quizCard" aria-live="polite"><div class="loading">題庫載入中⋯</div></div>
+    </div>
+  </section>
+
+  <section class="section source-section" id="sources">
+    <div class="shell">
+      <div class="section-overline"><span>06 / SOURCE & INTEGRITY</span><span class="faint-line"></span><span>每一個數字都要有依據</span></div>
+      <div class="source-layout">
+        <div><h2>可靠來源，<br><em>才有值得相信的話術。</em></h2><p>本示範只使用三星台灣公開資訊；上市建議售價不代表現在通路售價。來源連結、型號與查證日期皆可檢視。</p></div>
+        <div id="sourceList" class="source-list"></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="shell footer-inner"><div><b>STORAGE / FIELD LAB</b><p>依 Samsung 台灣公開資料製作的獨立教育訓練示範。</p></div><div><span>本頁非 Samsung 官方核可網站，未經品牌 VI 審核。</span><span>未收集姓名、答題資料；沒有購物交易或付費 API。</span><span>產品圖著作權歸原權利人所有；請依官方資訊核實後使用。</span></div></div>
+  <div class="shell footer-bottom"><span>EDUCATIONAL DEMO • 2026 / 11</span><a href="#top">回到頁首 ↑</a></div>
+</footer>
+</body>
+</html>
