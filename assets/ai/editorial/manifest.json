@@ -1,0 +1,141 @@
+{
+  "asset_set": "natural-editorial-20261115",
+  "purpose": "Illustrative contexts only, Samsung product photos remain official",
+  "items": [
+    {
+      "name": "hero-traveler",
+      "file": "hero-traveler.webp",
+      "source_filename": "山巔旅人的創作時光.png",
+      "description": "情境主視覺：旅人帶著攝影設備及筆電，在自然環境思考創作",
+      "category": "hero",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "bytes": 101048,
+      "sha256": "c3c13fc4d1b389f710455c1a58ffdd692ecec440012283e892bc7efa45557008",
+      "ai_generated": true,
+      "real_samsung_product": false
+    },
+    {
+      "name": "gamer-daylight",
+      "file": "gamer-daylight.webp",
+      "source_filename": "午後陽光下的現代遊戲工作室.png",
+      "description": "高階遊戲 PC 情境：自然採光的電腦遊戲空間",
+      "category": "gaming",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "bytes": 77306,
+      "sha256": "e589de75b0f20480be632e8339c62b932da2de63b0057ba57d246f8f665ed60a",
+      "ai_generated": true,
+      "real_samsung_product": false
+    },
+    {
+      "name": "gamer-evening",
+      "file": "gamer-evening.webp",
+      "source_filename": "沉浸式暖光電競工作室.png",
+      "description": "遊戲玩家情境：晚間在溫暖燈光下使用電腦",
+      "category": "gaming",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "bytes": 79558,
+      "sha256": "dae4a64413ceb3e4e43faba31824871b3d6c6c698ee5b68c8eead38be2b5321d",
+      "ai_generated": true,
+      "real_samsung_product": false
+    },
+    {
+      "name": "office-work",
+      "file": "office-work.webp",
+      "source_filename": "陽光下的專注辦公時光.png",
+      "description": "辦公情境：在採光良好的工作桌使用筆電",
+      "category": "pc",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "bytes": 96614,
+      "sha256": "ae441f8e637917b2d31c67dd343af036d7dde50aeb2d4ecc5a7acb7711e2d756",
+      "ai_generated": true,
+      "real_samsung_product": false
+    },
+    {
+      "name": "studio-editor",
+      "file": "studio-editor.webp",
+      "source_filename": "暖光中的山景剪輯工作室.png",
+      "description": "影像編修情境：相機與照片軟體、筆電在同一工作桌",
+      "category": "film",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "bytes": 140272,
+      "sha256": "333b8b2e397a5223877e44bfb1a3ad3fb0c16534f45d63ffdb9d77a6aa2c8749",
+      "ai_generated": true,
+      "real_samsung_product": false
+    },
+    {
+      "name": "film-workflow",
+      "file": "film-workflow.webp",
+      "source_filename": "暖陽下的創作者剪輯工作室.png",
+      "description": "影像創作者情境：相機、鏡頭與筆電一起處理素材",
+      "category": "film",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "bytes": 137556,
+      "sha256": "6e5692b476bab2d98d74b28d58c43c5d373b642bec1d760ac37f24250e243b48",
+      "ai_generated": true,
+      "real_samsung_product": false
+    },
+    {
+      "name": "drone-outdoor",
+      "file": "drone-outdoor.webp",
+      "source_filename": "山巔黃金時刻的無人機創作時光.png",
+      "description": "戶外攝影與空拍情境：攝影師與無人機設備",
+      "category": "action",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "bytes": 202026,
+      "sha256": "8cd32f79e7f6fbc32287e680c2212263726a224909ab94728f5b81f66b70bbc7",
+      "ai_generated": true,
+      "real_samsung_product": false
+    },
+    {
+      "name": "family-memories",
+      "file": "family-memories.webp",
+      "source_filename": "溫馨一家共享筆電時光.png",
+      "description": "家庭回憶情境：父母與孩子一起看照片、影片",
+      "category": "family",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "bytes": 164712,
+      "sha256": "0173c199efb86adeb68a966f0d3d2d1bb6d8a6483bc5dbd5a602b634dcc9303c",
+      "ai_generated": true,
+      "real_samsung_product": false
+    },
+    {
+      "name": "student-creator",
+      "file": "student-creator.webp",
+      "source_filename": "陽光圖書咖啡館的專注學習時光.png",
+      "description": "行動學習情境：學生在公共空間用筆電整理資料",
+      "category": "mobile",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "bytes": 143958,
+      "sha256": "42ca950a4182849051551d87aacd7eef851528b3cf816b211330b0e9f2533120",
+      "ai_generated": true,
+      "real_samsung_product": false
+    }
+  ]
+}

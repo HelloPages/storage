@@ -1,142 +1,111 @@
-/* HelloPages editorial scenes · ImageGen-generated contextual artwork, not simulated Samsung products. */
+/* HelloPages · natural editorial contexts 2026-11-15.
+ * AI artwork supports grounded customer situations only.
+ * Product hardware photos and verified specs are owned by app.js and stay official.
+ */
 "use strict";
-(function () {
+(() => {
   const root = document.documentElement;
-  const dir = "assets/ai/";
-  const byNeed = {
-    gaming: "gaming-studio", pc: "office-creator",
-    film: "filmmaker-camera", mobile: "student-creator",
-    action: "aerial-drone", family: "home-family"
+  const base = "assets/ai/editorial/";
+  const $ = (q, parent=document) => parent.querySelector(q);
+  const $$ = (q, parent=document) => [...parent.querySelectorAll(q)];
+  const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)");
+  const needImage = {
+    gaming:"gamer-daylight", pc:"office-work", film:"studio-editor",
+    mobile:"student-creator", action:"drone-outdoor", family:"family-memories"
   };
-  const byProduct = {
-    "9100pro": "competitive-gamer",
-    "990ssd": "office-creator",
-    p9: "film-editor",
-    p7: "student-creator",
-    t9microsd: "outdoor-artist",
-    t7microsd: "home-family"
-  };
-  const categoryScene = ["gaming-studio", "filmmaker-camera", "mountain-photography"];
-  const termScene = [
-    "competitive-gamer", "office-creator", "aerial-drone",
-    "film-editor", "outdoor-artist", "hero-travel"
+  const questionImage = [
+    "film-workflow","gamer-daylight","office-work","student-creator",
+    "drone-outdoor","family-memories",null,"drone-outdoor","studio-editor",null
   ];
-  const questionScene = [
-    "filmmaker-camera", "competitive-gamer", "office-creator", "student-creator",
-    "aerial-drone", "home-family", "office-creator", "mountain-photography",
-    "film-editor", "hero-explorer"
+  const storyCards = [
+    {file:"film-workflow",need:"film",title:"影像創作",text:"大型素材，從拍攝到剪輯"},
+    {file:"gamer-evening",need:"gaming",title:"遊戲體驗",text:"讓電腦規格真正發揮"},
+    {file:"drone-outdoor",need:"action",title:"戶外攝影",text:"旅途中紀錄每個瞬間"},
+    {file:"family-memories",need:"family",title:"生活回憶",text:"妥善保存重要的畫面"}
   ];
-  const q = (sel, parent=document) => parent.querySelector(sel);
-  const qa = (sel, parent=document) => Array.from(parent.querySelectorAll(sel));
-  function safe(value) {
-    return String(value).replace(/[&<>"']/g, ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+  const src=name=>base+name+".webp";
+  const safe=text=>String(text).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const img=(name,alt,lazy=true)=>'<img src="'+src(name)+'" alt="'+safe(alt)+'" loading="'+(lazy?'lazy':'eager')+'" decoding="async">';
+
+  function hero(){
+    const el=$(".hero-visual");
+    if(!el)return;
+    el.classList.add("natural-hero");
+    // Keep the original product photo in product cards instead of superimposing a false product scene.
+    const oldImage=$(".hero-image",el);
+    if(oldImage)oldImage.remove();
+    const corner=$(".hero-corner-label",el);
+    if(corner)corner.textContent="FIELD STORY / CREATIVE WORK";
+    const info=$(".visual-info",el);
+    if(info)info.innerHTML='<div><span>創作與儲存的生活故事</span><strong>讓靈感自由前進。</strong></div><span class="visual-index">SCENE 01</span>';
+    const code=$(".hero-code",el);
+    if(code)code.textContent="AI 情境示意｜非 Samsung 產品實拍";
   }
-  function sceneImg(name, alt = "") {
-    return '<img src="' + dir + safe(name) + '.webp" alt="' + safe(alt) + '" loading="lazy" decoding="async">';
-  }
-  function makeCinemaStrip() {
-    const hero = q(".hero");
-    if (!hero || q("#sceneStories")) return;
-    const strips = [
-      ["film-editor", "film", "影像創作", "剪輯素材快速往返"],
-      ["gaming-studio", "gaming", "遊戲玩家", "讓載入速度跟上節奏"],
-      ["mountain-photography", "action", "戶外攝影", "把精彩瞬間帶回家"],
-      ["home-family", "family", "日常生活", "把回憶好好收起來"]
-    ];
-    const html = '<section class="scene-stories" id="sceneStories" aria-label="AI 情境視覺故事">'
-      + '<div class="shell stories-heading"><span>AI IMAGERY / REAL USE CASES</span><span>以情境理解儲存需求</span></div>'
-      + '<div class="shell story-grid">'
-      + strips.map(([img, need, title, subtitle]) =>
-        '<button type="button" class="story-card" data-story-need="' + need + '" aria-label="選擇' + title + '需求">'
-        + sceneImg(img, "AI 生成：" + title + "生活情境") + '<span class="story-shade"></span>'
-        + '<span class="story-copy"><b>' + title + '</b><small>' + subtitle + '</small></span>'
-        + '<span class="story-arrow" aria-hidden="true">↗</span></button>').join("")
-      + '</div><p class="shell story-legend">圖像為 AI 創作的使用情境示意；產品本體一律以 Samsung 台灣官方照片為準。</p></section>';
-    hero.insertAdjacentHTML("afterend", html);
-    qa(".story-card").forEach(btn => btn.addEventListener("click", () => {
-      const needButton = q('.need-card[data-need="' + btn.dataset.storyNeed + '"]');
-      if (needButton) needButton.click();
-      q("#selector")?.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth",block:"start"});
+  function stories(){
+    const section=$(".hero");
+    if(!section || $("#sceneStories"))return;
+    const block='<section class="scene-stories" id="sceneStories" aria-label="四種顧客生活情境">'
+      +'<div class="shell stories-heading"><span>PEOPLE & PURPOSE</span><span>先看使用需求，再找合適的儲存方案</span></div>'
+      +'<div class="shell story-grid">'+storyCards.map(story=>
+         '<button class="story-card" type="button" data-story-need="'+story.need+'" aria-label="探索'+safe(story.title)+'的儲存需求">'
+         +img(story.file,"AI 生成的"+story.title+"生活情境",false)+'<span class="story-shade"></span>'
+         +'<span class="story-copy"><b>'+story.title+'</b><small>'+story.text+'</small></span>'
+         +'<span class="story-arrow" aria-hidden="true">↗</span></button>'
+       ).join("")+'</div>'
+       +'<p class="shell story-legend">以上為 AI 生成的生活情境圖片，並非 Samsung 官方產品宣傳照；產品外觀以各款官方產品照為準。</p>'
+       +'</section>';
+    section.insertAdjacentHTML("afterend",block);
+    $$(".story-card").forEach(button=>button.addEventListener("click",()=>{
+      const need=$('.need-card[data-need="'+button.dataset.storyNeed+'"]');
+      if(need)need.click();
+      $("#selector")?.scrollIntoView({behavior:reduceMotion.matches?"instant":"smooth",block:"start"});
     }));
   }
-  function enhanceHero() {
-    const hero = q(".hero-visual");
-    if (!hero || q(".hero-product-plate",hero)) return;
-    const plate = document.createElement("div");
-    plate.className = "hero-product-plate";
-    plate.setAttribute("aria-hidden","true");
-    const product = q(".hero-image",hero);
-    if (product) product.before(plate);
-    hero.setAttribute("data-ai-scene","hero-explorer");
-  }
-  function enhanceNeeds() {
-    qa(".need-card[data-need]").forEach(card => {
-      if (q(".need-scene",card)) return;
-      const key = byNeed[card.dataset.need];
-      if (!key) return;
-      card.insertAdjacentHTML("afterbegin", '<span class="need-scene">'
-        + sceneImg(key, "AI 生成：顧客使用情境") + '</span>');
+  function needs(){
+    $$(".need-card[data-need]").forEach(button=>{
+      const name=needImage[button.dataset.need];
+      if(!name || $(".need-scene",button))return;
+      button.insertAdjacentHTML("afterbegin",'<span class="need-scene">'
+        +img(name,"AI 生成的"+button.querySelector(".need-words b")?.textContent+"使用情境",false)
+        +'</span>');
     });
   }
-  function enhanceProducts() {
-    qa(".product-card").forEach(card => {
-      const id=card.id.replace(/^product-/,"");
-      const image=byProduct[id];
-      const holder=q(".product-media",card);
-      if (!holder || q(".product-scene",holder)||!image) return;
-      const scenario=id==="9100pro"?"高效能遊戲":id==="990ssd"?"日常電腦":id==="p9"?"專業剪輯":id==="p7"?"跨裝置工作":id==="t9microsd"?"戶外攝影":"日常回憶";
-      holder.insertAdjacentHTML("afterbegin", '<span class="product-scene">'
-         + sceneImg(image, "AI 創作：" + scenario + "使用情境")
-         + '<span class="scene-tag">AI 生成情境 · '+scenario+'</span></span>');
+  function questionScene(){
+    const host=$("#quizCard");
+    if(!host || $(".quiz-scene",host))return;
+    const finished=$(".quiz-finish",host);
+    if(finished)return; // No arbitrary artwork on a score summary.
+    const counter=$(".quiz-counter",host);
+    if(!counter)return;
+    const index=Math.max(0,Math.min(9,(parseInt(counter.textContent,10)||1)-1));
+    const name=questionImage[index];
+    if(!name)return; // Do not force art onto questions about general recommendation principles.
+    const scene=document.createElement("div");
+    scene.className="quiz-scene";
+    scene.innerHTML=img(name,"AI 生成的第"+(index+1)+"題顧客情境")
+       +'<span>顧客情境 / '+String(index+1).padStart(2,"0")+'</span>';
+    host.prepend(scene);
+  }
+  function watchQuiz(){
+    const host=$("#quizCard");if(!host)return;
+    let scheduled=false;
+    const observer=new MutationObserver(()=>{
+      if(scheduled)return;
+      scheduled=true;
+      queueMicrotask(()=>{scheduled=false;questionScene()});
     });
+    observer.observe(host,{childList:true});
+    questionScene();
   }
-  function enhanceCompare() {
-    qa(".comparison-card").forEach((card,index)=>{
-      if(q(".comparison-scene",card))return;
-      const name=categoryScene[index]||"film-editor";
-      card.insertAdjacentHTML("afterbegin", '<figure class="comparison-scene">'
-        + sceneImg(name,"AI 生成：儲存選購情境") + '</figure>');
-    });
+  function start(){
+    if(root.dataset.editorialReady)return;
+    hero();stories();needs();watchQuiz();
+    root.dataset.editorialReady="9";
   }
-  function enhanceKnowledge() {
-    qa(".term-item").forEach((card,index)=>{
-      if(q(".term-scene",card))return;
-      card.insertAdjacentHTML("afterbegin", '<div class="term-scene">'
-        + sceneImg(termScene[index%termScene.length],"AI 生成：儲存設備生活示意") + '</div>');
-    });
-  }
-  function enhanceQuiz() {
-    const card=q("#quizCard");
-    if(!card || q(".quiz-scene",card))return;
-    const finish=q(".quiz-finish",card);
-    const counter=q(".quiz-counter",card);
-    if(!finish&&!counter)return;
-    const idx=finish?9:Math.max(0,Math.min(9,(parseInt(counter.textContent,10)||1)-1));
-    const name=questionScene[idx];
-    const banner=document.createElement("div");
-    banner.className="quiz-scene";
-    banner.innerHTML=sceneImg(name,"AI 生成：銷售實戰情境示意")+'<span>場景式銷售挑戰 / VISUAL CASE '+String(idx+1).padStart(2,"0")+'</span>';
-    card.insertAdjacentElement("afterbegin",banner);
-  }
-  function monitorQuiz() {
-    const el=q("#quizCard");if(!el)return;
-    let pending=false;
-    const observer = new MutationObserver(()=>{
-      if(pending)return;
-      pending=true;queueMicrotask(()=>{pending=false;enhanceQuiz()});
-    });
-    observer.observe(el,{childList:true});
-    enhanceQuiz();
-  }
-  function setup() {
-    if(q("#sceneStories"))return;
-    enhanceHero();makeCinemaStrip();enhanceNeeds();enhanceProducts();enhanceCompare();enhanceKnowledge();monitorQuiz();
-    root.dataset.aiScenesLoaded="12";
-  }
-  if(root.dataset.loaded==="true")setup();
+  if(root.dataset.loaded==="true")start();
   else {
     const observer=new MutationObserver(()=>{
-      if(root.dataset.loaded==="true"){observer.disconnect();setup();}
+      if(root.dataset.loaded==="true"){observer.disconnect();start();}
     });
     observer.observe(root,{attributes:true,attributeFilter:["data-loaded"]});
   }
