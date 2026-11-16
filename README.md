@@ -4,6 +4,29 @@
 
 這是 HelloPages 旗下的免費靜態教育訓練示範站，並非 Samsung 官方核可站點。
 
+## 2026/11/16｜分類色塊與獨立產品卡版（目前版本）
+
+依使用者要求，將原本一整串連續產品卡重整為**三個各自有色塊的產品章節**，每章兩款產品，不再讓手機讀者像在滑長篇文件。
+
+- **01 內接 SSD**：淡綠色背景，9100 PRO、990 SSD 各一張白底卡。
+- **02 外接 USB4 SSD**：淡藍色背景，P9、P7 各一張白底卡。
+- **03 microSD**：暖米色背景，T9、T7 各一張白底卡。
+- 章節外框保持平面、不加陰影；單一產品卡才用中性 1px 細框、8–10px 小圓角、右下 4px 乾淨錯位色塊。避免外卡內卡都做立體。
+- 產品縮圖、型號、主訴求、核心數據、適合客群與第一句問法保持可直接看見；詳細銷售優勢、示範與官方詳細規格仍可展開。
+- 新增三種類型快速跳轉、動態產品總數提示；篩選/搜尋會隱藏空章節，從推薦或比較跳到單機卡仍自動恢復可見狀態。
+- 桌面每章兩款並排，手機每章單欄但卡片分開留白；沒有新增框架、服務或付費 API。
+- **程式檔案：** `app.js` 生成三大分類與搜尋篩選狀態，`index.html` 提供分類導覽，`chapter-layout.css`（最後載入）統一章節色塊與手機卡片版型；其餘產品／問答 JSON 不變。
+- **驗收：** `py qa_chapters.py` 檢查四種尺寸、三種不同背景色、每類2卡、章節/篩選/搜尋/錨點/官方圖片/展開與沒有水平溢出；`py qa_site.py` 完整十題測驗；`py qa_graphics.py` SVG 和圖片；`py qa_editorial.py` 自然攝影圖片（均需在本機和正式站各測一次）。
+- 發布只能更新 `HelloPages/storage` 的 `main`，不得動到原 FlySamTW repo、其他網站或私人資料。
+
+## 四種網址（交付時逐一核對）
+- 一般完整網址：https://hellopages.github.io/storage/
+- LINE 外部完整網址：https://hellopages.github.io/storage/?openExternalBrowser=1
+- 一般無廣告短網址：https://spoo.me/2o8EHSl
+- LINE 外部無廣告短網址：https://spoo.me/K6AH62a
+
+
+
 ## 六款選品
 
 9100 PRO、990 SSD、P9 USB4、P7 USB4、T9 microSD、T7 microSD；以 Samsung 台灣官方產品頁與新聞稿的指定容量資料為基準，不冒稱銷售排行榜。產品與官方來源在 `products.json`，官方圖片及原始連結在 `assets/sources.json`。

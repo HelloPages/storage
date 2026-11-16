@@ -25,10 +25,35 @@ function productCard(p){
   const specs=p.specs.map(pair=>'<div class="spec-row"><dt>'+esc(pair[0])+'</dt><dd>'+esc(pair[1])+'</dd></div>').join("");
   return '<article class="product-card" id="product-'+p.id+'" data-kind="'+p.category+'" aria-label="'+esc(p.name)+' 產品教學"><figure class="product-media"><span class="media-index">'+String(p.rank).padStart(2,"0")+' / 06</span><span class="media-kicker">'+esc(p.categoryLabel)+'</span>'+photo(p)+'<span class="media-bottom">'+esc(p.edition)+'</span></figure><div class="product-body"><div class="product-topline"><span>'+esc(p.flag)+'</span><span>'+esc(p.sample.split("｜")[0])+'</span></div><h3>'+esc(p.name)+'</h3><p class="product-english">'+esc(p.edition)+'</p><p class="product-tagline">'+esc(p.tagline)+'</p><div class="product-metrics">'+metrics+'</div><div class="audience-block"><small>推薦給誰 / WHO IT IS FOR</small><p>'+esc(p.audience)+'</p></div><div class="selling-start"><small>第一句這樣問</small><strong>'+esc(p.lead)+'</strong></div><div class="benefits"><div class="mini-heading">3 個真正有感的賣點</div><ol>'+benefits+'</ol></div><div class="demo-box"><small>現場示範</small><p>'+esc(p.demo)+'</p></div><details class="specs"><summary>官方詳細規格與相容提醒 <span>＋</span></summary><dl>'+specs+'</dl><p class="spec-caution">講師核對：'+esc(p.caution)+'</p></details><div class="card-footer"><div class="launch-msrp"><small>台灣上市建議售價 · '+esc(p.msrpCapacity)+'</small><b>'+fmt(p.msrp)+'</b><a href="'+esc(p.priceSource)+'" target="_blank" rel="noopener noreferrer">官方上市價格來源 ↗</a></div>'+productLink(p)+'</div></div></article>';
 }
+const catalogChapters=[
+  {key:"internal",number:"01",english:"INTERNAL SSD / PC UPGRADE",title:"效能，從電腦裡面升級。",description:"先確認電腦的相容介面，再從遊戲、工作與創作需求選擇內接 SSD。",hint:"內接升級"},
+  {key:"portable",number:"02",english:"PORTABLE SSD / CREATE ANYWHERE",title:"資料帶著走，工作不受限。",description:"適合移動大型素材、跨裝置使用與工作備份，從實際工作流程挑選。",hint:"行動工作"},
+  {key:"card",number:"03",english:"MEMORY CARD / EVERY MOMENT",title:"每段回憶，都值得留好空間。",description:"確認相機、掌機或其他設備所需的記憶卡類型，再挑選容量與拍攝需求。",hint:"日常儲存"}
+];
 function drawCards(){
-  $("#productGrid").innerHTML=S.data.products.map(productCard).join("");
-  $$(".filter").forEach(btn=>btn.addEventListener("click",()=>{S.filter=btn.dataset.filter;$$(".filter").forEach(b=>{b.classList.toggle("is-active",b===btn);b.setAttribute("aria-pressed",String(b===btn));});filterCards();}));
+  $("#productGrid").innerHTML=catalogChapters.map(chapter=>{
+    const items=S.data.products.filter(p=>p.category===chapter.key);
+    if(!items.length)return "";
+    return '<section class="product-family family-'+chapter.key+'" id="family-'+chapter.key+'" data-family="'+chapter.key+'" aria-labelledby="family-title-'+chapter.key+'">'+
+      '<header class="family-header"><div class="family-number"><span>'+chapter.number+'</span><small>/ 03</small></div>'+
+      '<div class="family-heading"><div class="family-eyebrow">'+chapter.english+'</div><h3 id="family-title-'+chapter.key+'">'+chapter.title+'</h3>'+
+      '<p>'+chapter.description+'</p></div>'+
+      '<div class="family-tag"><strong>'+items.length+' 款</strong><span>'+chapter.hint+'</span></div></header>'+
+      '<div class="family-cards">'+items.map(productCard).join("")+'</div></section>';
+  }).join("");
+  $$(".filter").forEach(btn=>btn.addEventListener("click",()=>{
+    S.filter=btn.dataset.filter;
+    $$(".filter").forEach(b=>{const active=b===btn;b.classList.toggle("is-active",active);b.setAttribute("aria-pressed",String(active));});
+    filterCards();
+  }));
   $("#productSearch").addEventListener("input",e=>{S.search=e.target.value.trim().toLowerCase();filterCards();});
+  $$(".category-jump").forEach(button=>button.addEventListener("click",()=>{
+    S.filter="all";S.search="";$("#productSearch").value="";
+    $$(".filter").forEach(b=>{const active=b.dataset.filter==="all";b.classList.toggle("is-active",active);b.setAttribute("aria-pressed",String(active));});
+    filterCards();
+    const chapter=$("#family-"+button.dataset.jump);
+    if(chapter)chapter.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"instant":"smooth",block:"start"});
+  }));
 }
 function filterCards(){
   let count=0;
@@ -38,6 +63,11 @@ function filterCards(){
     const show=(S.filter==="all"||p.category===S.filter)&&(!S.search||haystack.includes(S.search));
     el.hidden=!show;if(show)count++;
   });
+  $$(".product-family").forEach(chapter=>{
+    chapter.hidden=!$$(".product-card",chapter).some(card=>!card.hidden);
+  });
+  const shown=$("#catalogMatchCount");
+  if(shown)shown.textContent="目前顯示 "+count+" / "+S.data.products.length+" 款";
   let empty=$("#catalogEmpty");if(!empty){empty=document.createElement("div");empty.id="catalogEmpty";empty.className="empty-products";$("#productGrid").after(empty);}
   empty.hidden=count>0;empty.textContent=count?"":"沒有符合的機型。請更改分類或清除搜尋文字。";
 }

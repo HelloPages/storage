@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="visual-lab.css">
   <link rel="stylesheet" href="ai-scenes.css">
+  <link rel="stylesheet" href="chapter-layout.css">
   <script src="app.js" defer></script>
   <script src="visual-lab.js" defer></script>
   <script src="ai-scenes.js" defer></script>
@@ -101,9 +102,14 @@
     <div class="shell">
       <div class="section-overline"><span>02 / PRODUCT PLAYBOOK</span><span class="faint-line"></span><span>本次精選 6 款</span></div>
       <div class="section-intro">
-        <div><h2>用產品優勢，<br><em>講出顧客聽得懂的價值。</em></h2><p>每款都根據真正的官方資料挑選賣點。先讀推薦對象與開場句，再看如何現場展示。</p></div>
+        <div><h2>三種儲存主場，<br><em>六款產品一眼看懂。</em></h2><p>先選產品類型，再看每款的核心特色與適合客群；詳細話術、相容性與規格，需要時再展開。</p></div>
         <div class="subtle-note">官方圖片 · 產品資料 · 真實情境<br><strong>不採用 AI 重畫產品。</strong></div>
       </div>
+      <nav class="category-jumpnav" aria-label="產品類別快速導覽">
+        <button type="button" class="category-jump" data-jump="internal"><span class="jump-index">01</span><span class="jump-words"><strong>內接 SSD</strong><small>電腦效能升級</small></span><span class="jump-arrow" aria-hidden="true">↓</span></button>
+        <button type="button" class="category-jump" data-jump="portable"><span class="jump-index">02</span><span class="jump-words"><strong>外接 SSD</strong><small>跨裝置移動資料</small></span><span class="jump-arrow" aria-hidden="true">↓</span></button>
+        <button type="button" class="category-jump" data-jump="card"><span class="jump-index">03</span><span class="jump-words"><strong>microSD 卡</strong><small>拍攝與日常擴充</small></span><span class="jump-arrow" aria-hidden="true">↓</span></button>
+      </nav>
       <div class="catalog-tools">
         <div class="filters" id="categoryFilters" role="group" aria-label="產品類別篩選">
           <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">全部產品 <span>06</span></button>
@@ -113,6 +119,7 @@
         </div>
         <label class="catalog-search"><span class="search-icon" aria-hidden="true">⌕</span><input id="productSearch" type="search" placeholder="搜尋型號、功能或用途…" aria-label="搜尋產品"></label>
       </div>
+      <div class="catalog-summary"><span id="catalogMatchCount">目前顯示 6 / 6 款</span><span>每款一張獨立教材卡，詳細內容可展開</span></div>
       <div class="product-grid" id="productGrid" aria-live="polite"><p class="loading">正在整理產品資料⋯</p></div>
       <div class="catalog-footnote">不同品類的速度數字不能直接排名；實際表現與主機介面、容量、線材及測試條件有關。各項請以官方完整型號資料為準。</div>
     </div>
