@@ -1,141 +1,151 @@
 {
-  "asset_set": "natural-editorial-20261115",
+  "asset_set": "western-editorial-20261117",
   "purpose": "Illustrative contexts only, Samsung product photos remain official",
   "items": [
     {
       "name": "hero-traveler",
-      "file": "hero-traveler.webp",
-      "source_filename": "山巔旅人的創作時光.png",
-      "description": "情境主視覺：旅人帶著攝影設備及筆電，在自然環境思考創作",
+      "file": "western-hero-traveler.webp",
+      "source_filename": "Original AI editorial photograph hero-traveler (2026-11-17)",
+      "description": "情境主視覺：旅人帶著攝影設備及筆電，在自然環境思考創作；更新為歐美人物的自然寫實日常情境",
       "category": "hero",
       "dimensions": [
         1600,
         900
       ],
-      "bytes": 101048,
-      "sha256": "c3c13fc4d1b389f710455c1a58ffdd692ecec440012283e892bc7efa45557008",
+      "bytes": 97042,
+      "sha256": "8f1b1ba6763de815f71e70d4a6aa5a9dea7d6e9f789e976286cfefe16687b1d1",
       "ai_generated": true,
-      "real_samsung_product": false
+      "real_samsung_product": false,
+      "generator": "Higgsfield z_image, 2026-11-17"
     },
     {
       "name": "gamer-daylight",
-      "file": "gamer-daylight.webp",
-      "source_filename": "午後陽光下的現代遊戲工作室.png",
-      "description": "高階遊戲 PC 情境：自然採光的電腦遊戲空間",
+      "file": "western-gamer-daylight.webp",
+      "source_filename": "Original AI editorial photograph gamer-daylight (2026-11-17)",
+      "description": "高階遊戲 PC 情境：自然採光的電腦遊戲空間；更新為歐美人物的自然寫實日常情境",
       "category": "gaming",
       "dimensions": [
         1448,
         1086
       ],
-      "bytes": 77306,
-      "sha256": "e589de75b0f20480be632e8339c62b932da2de63b0057ba57d246f8f665ed60a",
+      "bytes": 85952,
+      "sha256": "91580ca863f1d0fe93c5ad775f960bd52dcbab5d8fdc2a2145b1d1865c2f374f",
       "ai_generated": true,
-      "real_samsung_product": false
+      "real_samsung_product": false,
+      "generator": "Higgsfield z_image, 2026-11-17"
     },
     {
       "name": "gamer-evening",
-      "file": "gamer-evening.webp",
-      "source_filename": "沉浸式暖光電競工作室.png",
-      "description": "遊戲玩家情境：晚間在溫暖燈光下使用電腦",
+      "file": "western-gamer-evening.webp",
+      "source_filename": "Original AI editorial photograph gamer-evening (2026-11-17)",
+      "description": "遊戲玩家情境：晚間在溫暖燈光下使用電腦；更新為歐美人物的自然寫實日常情境",
       "category": "gaming",
       "dimensions": [
         1448,
         1086
       ],
-      "bytes": 79558,
-      "sha256": "dae4a64413ceb3e4e43faba31824871b3d6c6c698ee5b68c8eead38be2b5321d",
+      "bytes": 79838,
+      "sha256": "48dbf0a60f51371c72fa25b873a7b09630acd585f2bbcbed512290e453265c5a",
       "ai_generated": true,
-      "real_samsung_product": false
+      "real_samsung_product": false,
+      "generator": "Higgsfield z_image, 2026-11-17"
     },
     {
       "name": "office-work",
-      "file": "office-work.webp",
-      "source_filename": "陽光下的專注辦公時光.png",
-      "description": "辦公情境：在採光良好的工作桌使用筆電",
+      "file": "western-office-work.webp",
+      "source_filename": "Original AI editorial photograph office-work (2026-11-17)",
+      "description": "辦公情境：在採光良好的工作桌使用筆電；更新為歐美人物的自然寫實日常情境",
       "category": "pc",
       "dimensions": [
         1448,
         1086
       ],
-      "bytes": 96614,
-      "sha256": "ae441f8e637917b2d31c67dd343af036d7dde50aeb2d4ecc5a7acb7711e2d756",
+      "bytes": 76572,
+      "sha256": "d939b16e4ad75b544fae3d517174446c740e6c0c098f59532810f68f5ce45134",
       "ai_generated": true,
-      "real_samsung_product": false
+      "real_samsung_product": false,
+      "generator": "Higgsfield z_image, 2026-11-17"
     },
     {
       "name": "studio-editor",
-      "file": "studio-editor.webp",
-      "source_filename": "暖光中的山景剪輯工作室.png",
-      "description": "影像編修情境：相機與照片軟體、筆電在同一工作桌",
+      "file": "western-studio-editor.webp",
+      "source_filename": "Original AI editorial photograph studio-editor (2026-11-17)",
+      "description": "影像編修情境：相機與照片軟體、筆電在同一工作桌；更新為歐美人物的自然寫實日常情境",
       "category": "film",
       "dimensions": [
         1448,
         1086
       ],
-      "bytes": 140272,
-      "sha256": "333b8b2e397a5223877e44bfb1a3ad3fb0c16534f45d63ffdb9d77a6aa2c8749",
+      "bytes": 129970,
+      "sha256": "c221fe6737e48ed4903f62ec04081af9ecc4e3543cbff2c22df4d334d3a26a14",
       "ai_generated": true,
-      "real_samsung_product": false
+      "real_samsung_product": false,
+      "generator": "Higgsfield z_image, 2026-11-17"
     },
     {
       "name": "film-workflow",
-      "file": "film-workflow.webp",
-      "source_filename": "暖陽下的創作者剪輯工作室.png",
-      "description": "影像創作者情境：相機、鏡頭與筆電一起處理素材",
+      "file": "western-film-workflow.webp",
+      "source_filename": "Original AI editorial photograph film-workflow (2026-11-17)",
+      "description": "影像創作者情境：相機、鏡頭與筆電一起處理素材；更新為歐美人物的自然寫實日常情境",
       "category": "film",
       "dimensions": [
         1448,
         1086
       ],
-      "bytes": 137556,
-      "sha256": "6e5692b476bab2d98d74b28d58c43c5d373b642bec1d760ac37f24250e243b48",
+      "bytes": 120624,
+      "sha256": "49a91fdf7af2c0b0c79eddf112ac6914922fbdb47f404173259074564d128181",
       "ai_generated": true,
-      "real_samsung_product": false
+      "real_samsung_product": false,
+      "generator": "Higgsfield z_image, 2026-11-17"
     },
     {
       "name": "drone-outdoor",
-      "file": "drone-outdoor.webp",
-      "source_filename": "山巔黃金時刻的無人機創作時光.png",
-      "description": "戶外攝影與空拍情境：攝影師與無人機設備",
+      "file": "western-drone-outdoor.webp",
+      "source_filename": "Original AI editorial photograph drone-outdoor (2026-11-17)",
+      "description": "戶外攝影與空拍情境：攝影師與無人機設備；更新為歐美人物的自然寫實日常情境",
       "category": "action",
       "dimensions": [
         1448,
         1086
       ],
-      "bytes": 202026,
-      "sha256": "8cd32f79e7f6fbc32287e680c2212263726a224909ab94728f5b81f66b70bbc7",
+      "bytes": 230570,
+      "sha256": "893e9571a6d28073185c5bbf702ccd460cfd77c5aa80eaa08ef157dbb4095156",
       "ai_generated": true,
-      "real_samsung_product": false
+      "real_samsung_product": false,
+      "generator": "Higgsfield z_image, 2026-11-17"
     },
     {
       "name": "family-memories",
-      "file": "family-memories.webp",
-      "source_filename": "溫馨一家共享筆電時光.png",
-      "description": "家庭回憶情境：父母與孩子一起看照片、影片",
+      "file": "western-family-memories.webp",
+      "source_filename": "Original AI editorial photograph family-memories (2026-11-17)",
+      "description": "家庭回憶情境：父母與孩子一起看照片、影片；更新為歐美人物的自然寫實日常情境",
       "category": "family",
       "dimensions": [
         1448,
         1086
       ],
-      "bytes": 164712,
-      "sha256": "0173c199efb86adeb68a966f0d3d2d1bb6d8a6483bc5dbd5a602b634dcc9303c",
+      "bytes": 101842,
+      "sha256": "7c5c5e94df2f0d9aa07e5157f9d35b5808c15347848753396df89f30b02dc4ad",
       "ai_generated": true,
-      "real_samsung_product": false
+      "real_samsung_product": false,
+      "generator": "Higgsfield z_image, 2026-11-17"
     },
     {
       "name": "student-creator",
-      "file": "student-creator.webp",
-      "source_filename": "陽光圖書咖啡館的專注學習時光.png",
-      "description": "行動學習情境：學生在公共空間用筆電整理資料",
+      "file": "western-student-creator.webp",
+      "source_filename": "Original AI editorial photograph student-creator (2026-11-17)",
+      "description": "行動學習情境：學生在公共空間用筆電整理資料；更新為歐美人物的自然寫實日常情境",
       "category": "mobile",
       "dimensions": [
         1448,
         1086
       ],
-      "bytes": 143958,
-      "sha256": "42ca950a4182849051551d87aacd7eef851528b3cf816b211330b0e9f2533120",
+      "bytes": 122250,
+      "sha256": "e6c2c2b9f043963954e42e4c661af80e5fc80f1fe42385020a697889e4464676",
       "ai_generated": true,
-      "real_samsung_product": false
+      "real_samsung_product": false,
+      "generator": "Higgsfield z_image, 2026-11-17"
     }
-  ]
+  ],
+  "generation_note": "Nine independent editorial lifestyle photographs from a text-to-image model. Human scenes depict Western adult/family characters and are not brand photography."
 }

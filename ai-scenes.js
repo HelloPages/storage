@@ -23,7 +23,7 @@
     {file:"drone-outdoor",need:"action",title:"戶外攝影",text:"旅途中紀錄每個瞬間"},
     {file:"family-memories",need:"family",title:"生活回憶",text:"妥善保存重要的畫面"}
   ];
-  const src=name=>base+name+".webp";
+  const src=name=>base+"western-"+name+".webp";
   const safe=text=>String(text).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
   const img=(name,alt,lazy=true)=>'<img src="'+src(name)+'" alt="'+safe(alt)+'" loading="'+(lazy?'lazy':'eager')+'" decoding="async">';
 

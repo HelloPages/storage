@@ -10,7 +10,7 @@
 .hero{background:radial-gradient(ellipse at 75% 38%,#244d4d 0%,#112f36 42%,#0e222b 83%)}
 .hero-visual.natural-hero{
   background:linear-gradient(180deg,rgba(6,24,31,.10) 0%,rgba(7,25,31,.03) 49%,rgba(3,22,29,.80) 100%),
-    url("assets/ai/editorial/hero-traveler.webp") 38% 47%/cover no-repeat;
+    url("assets/ai/editorial/western-hero-traveler.webp") 38% 47%/cover no-repeat;
   min-height:470px;
   border:1px solid #658984;
   border-radius:10px;
